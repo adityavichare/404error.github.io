@@ -1,3 +1,4 @@
+<html>
 <style>
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
@@ -269,13 +270,15 @@ body{
 }
 
 
-
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
 
 </style>
- 
- 
- 
- 
+<body>
  <div id="clouds">
             <div class="cloud x1"></div>
             <div class="cloud x1_5"></div>
@@ -292,4 +295,5 @@ body{
             <a class="cta-btn" href="#" style="text-decoration: none;">GO BACK TO HOME</a>
           </div>
 		</section>
-        
+ </body>
+</html> 
