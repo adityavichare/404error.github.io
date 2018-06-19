@@ -12,13 +12,50 @@ body{
                 height: 100%;
 				width: 100%;
 				margin : 0px;
-				background-image:url('robot.jpg');
+				
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
 				overflow: hidden;
 				overflow-x: hidden;
             }
+			
+			.one{
+			
+				height: 100%;
+				width: 100%;
+				margin : 0px;
+				background-image:url('robot.jpg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				overflow: hidden;
+				overflow-x: hidden;
+
+			
+			}
+			
+			.two{
+			
+				height: 100%;
+				width: 100%;
+				margin : 0px;
+				background-image:url('robot-mobile.jpg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				overflow: hidden;
+				overflow-x: hidden;
+
+			
+			}
+			
+			
+			
+			
+			
+			
+			
 			
 			
 			
@@ -275,21 +312,30 @@ body{
 }
 
  
-<script type="text/javascript">
-<!--
-if (screen.width <= 699) {
-document.location = "404error-mobile.html";
+@media all and (max-width: 959px) {
+
+background-image:url('robot.jpg');
+    .content .one{display:block;}
+    .content .two{display:none;}
+
 }
-//-->
-</script>
-	
-				
-}
+
+
+
+@media screen and (max-width: 600px) {
+  div.one { display: none; }
+  div.two { display: block; }
+
+
 </style>
 
 
 </head>
 <body>
+
+
+
+
 
 
 
@@ -306,8 +352,7 @@ document.location = "404error-mobile.html";
 </div>
 
 
-
-desktop
+    <div class="one" >this is the content for desktop
 	
 	<img id="logo"  src="logo.png" alt="HTML5 Icon" style="width:276px;height:48px; float: left; bottom:30%; left: 5%;  position: absolute;">
 		
@@ -316,13 +361,16 @@ desktop
             <a class="cta-btn" href="#" style="text-decoration: none;">GO BACK TO HOME</a>
           </div>
 		</section>
-
+	</div>
+	
 		
-  
+    <div class="two">this is the content for mobile
 	
 	
-</div>
-</div>
+	</div>
+
+
+
 		
  </body>
 </html> 
