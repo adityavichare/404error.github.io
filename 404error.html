@@ -5,24 +5,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
-body{
+		body{
                 
                 color:#fff;
                 font-family: 'Calibri', sans-serif;
                 height: 100%;
-				width: 100%;
-				margin : 0px;
-				
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: cover;
-				overflow: hidden;
-				overflow-x: hidden;
-            }
-			
-			.one{
-			
-				height: 100%;
 				width: 100%;
 				margin : 0px;
 				background-image:url('robot.jpg');
@@ -31,13 +18,18 @@ body{
 				background-size: cover;
 				overflow: hidden;
 				overflow-x: hidden;
+            }
+			
 
-			
-			}
-			
-			.two{
-			
-				height: 100%;
+
+
+@media (max-width: 320px) {
+  
+  body{
+                
+                color:#fff;
+                font-family: 'Calibri', sans-serif;
+                height: 100%;
 				width: 100%;
 				margin : 0px;
 				background-image:url('robot-mobile.jpg');
@@ -46,20 +38,14 @@ body{
 				background-size: cover;
 				overflow: hidden;
 				overflow-x: hidden;
-
-			
-			}
-			
-			
+            }
+  
+}		
 			
 			
 			
 			
-			
-			
-			
-			
-			
+		
             .c{
                 text-align: center;
                 display: block;
@@ -312,19 +298,6 @@ body{
 }
 
  
-@media screen and (max-width: 959px) {
-
-background-image:url('robot.jpg');
-    .content .one{display:block;}
-    .content .two{display:none;}
-
-}
-
-
-
-@media screen and (max-width: 600px) {
-  div.one { display: none; }
-  div.two { display: block; }
 
 
 </style>
@@ -334,15 +307,8 @@ background-image:url('robot.jpg');
 <body>
 
 
-
-
-
-
-
-
-
-
-<div id="clouds">
+    <div class="one" >this is the content for desktop
+	<div id="clouds">
     <div class="cloud x1"></div>
     <div class="cloud x1_5"></div>
     <div class="cloud x2"></div>
@@ -350,10 +316,6 @@ background-image:url('robot.jpg');
     <div class="cloud x4"></div>
     <div class="cloud x5"></div>
 </div>
-
-
-    <div class="one" >this is the content for desktop
-	
 	<img id="logo"  src="logo.png" alt="HTML5 Icon" style="width:276px;height:48px; float: left; bottom:30%; left: 5%;  position: absolute;">
 		
 		<section id="call-to-action"
@@ -364,10 +326,7 @@ background-image:url('robot.jpg');
 	</div>
 	
 		
-    <div class="two">this is the content for mobile
-	
-	
-	</div>
+
 
 
 
