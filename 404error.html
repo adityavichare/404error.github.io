@@ -30,7 +30,7 @@ html {
 @media (max-width: 481px) {
   
   body{
-  position: relative;
+				position: relative;
                 background-color:#2DBEFF;
                 color:#fff;
                 font-family: 'Calibri', sans-serif;
@@ -44,6 +44,15 @@ html {
 				overflow-x: hidden;
 				overflow-y: hidden;
             }
+			
+			 #call-to-action .cta-btn-container {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				width:100%;
+				float:center;
+				
+			  }
 			
 			#call-to-action .cta-btn {
 			  font-family: "Montserrat", sans-serif;
@@ -59,7 +68,7 @@ html {
 			  color: #fff;
 			  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 			  transition: 0.3s;
-			  position: absolute;
+			  
 			  background:#3f51b5;
 			  width:75%'
 			  float:center;
@@ -321,7 +330,7 @@ html {
   
   border: 3px solid ;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-  background:#673ab7;
+  background:#f44336;
 }
 
  
@@ -333,7 +342,6 @@ document.body.addEventListener('touchstart', function(e){ e.preventDefault(); })
 </script>
 </head>
 <body>
-1
     <div class="one" >
 	<div id="clouds">
     <div class="cloud x1"></div>
@@ -350,8 +358,7 @@ document.body.addEventListener('touchstart', function(e){ e.preventDefault(); })
           </div>
 		</section>
 
-	<div id="mobile">
-	
+	<div id="mobile">	
 	<img src="robot-mobile.jpg" alt="Girl in a jacket" width="100%" height="100%"  style=" position:relative; z-index: -3;">
 	
 	</div>
