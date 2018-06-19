@@ -11,16 +11,55 @@ body{
                 font-family: 'Calibri', sans-serif;
                 height: 100%;
 				width: 100%;
-				margin-top : 10px;
+				margin : 0px;
 				
-				background-image: url("robot.jpg");
-			 
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
 				overflow: hidden;
 				overflow-x: hidden;
             }
+			
+			.one{
+			
+				height: 100%;
+				width: 100%;
+				margin : 0px;
+				background-image:url('robot.jpg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				overflow: hidden;
+				overflow-x: hidden;
+
+			
+			}
+			
+			.two{
+			
+				height: 100%;
+				width: 100%;
+				margin 0px;
+				background-image:url('robot-mobile.jpg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				overflow: hidden;
+				overflow-x: hidden;
+
+			
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
             .c{
                 text-align: center;
                 display: block;
@@ -272,24 +311,63 @@ body{
   background:#673ab7;
 }
 
+ 
+@media all and (max-width: 959px) {
+
+    .content .one{display:block;}
+    .content .two{display:none;}
+
+}
+
+
+@media all and (max-width: 479px) {
+
+    .content .one{display:none;}
+    .content .two{display:block;}
+	
+				
+}
 </style>
+
+
 </head>
 <body>
- <div id="clouds">
-            <div class="cloud x1"></div>
-            <div class="cloud x1_5"></div>
-            <div class="cloud x2"></div>
-            <div class="cloud x3"></div>
-            <div class="cloud x4"></div>
-            <div class="cloud x5"></div>
-        </div>
-		
-		<img id="logo"  src="logo.png" alt="HTML5 Icon" style="width:276px;height:48px; float: left; bottom:30%; left: 5%;  position: absolute;">
+
+
+
+
+
+
+<div id="clouds">
+    <div class="cloud x1"></div>
+    <div class="cloud x1_5"></div>
+    <div class="cloud x2"></div>
+    <div class="cloud x3"></div>
+    <div class="cloud x4"></div>
+    <div class="cloud x5"></div>
+</div>
+
+
+
+<div class="content">
+    <div class="one" >this is the content for desktop
+	
+	<img id="logo"  src="logo.png" alt="HTML5 Icon" style="width:276px;height:48px; float: left; bottom:30%; left: 5%;  position: absolute;">
 		
 		<section id="call-to-action"
-		<div class="cta-btn-container">
+			<div class="cta-btn-container">
             <a class="cta-btn" href="#" style="text-decoration: none;">GO BACK TO HOME</a>
           </div>
 		</section>
+	</div>
+	
+		
+    <div class="two">this is the content for mobile
+	
+	
+	
+</div>
+</div>
+		
  </body>
 </html> 
