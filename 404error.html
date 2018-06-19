@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <style>
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 html {
   overflow-x: hidden;
 }
@@ -15,7 +15,7 @@ html {
                 height: 100%;
 				width: 100%;
 				margin : 0px;
-				background-image:url('robot.jpg');
+				background-image:url('img/robot.jpg');
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
@@ -63,7 +63,7 @@ html {
 			  padding: 8px 26px;
 			  border-radius: 3px;
 			  transition: 0.5s;
-			  margin: 10px;
+			  
 			  border: 3px solid #fff;
 			  color: #fff;
 			  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -72,6 +72,8 @@ html {
 			  background:#3f51b5;
 			  width:75%'
 			  float:center;
+			  margin-left: auto;
+			  margin-right: auto;
 			}
 			#mobile { display: block; }
   
@@ -142,27 +144,7 @@ html {
                 width:60%;
             }
             
-            hr{
-                padding: 0;
-                border: none;
-                border-top: 5px solid #fff;
-                color: #fff;
-                text-align: center;
-                margin: 0px auto;
-                width: 420px;
-                height:10px;
-                z-index: -10;
-            }
-            
-            hr:after {
-                content: "\2022";
-                display: inline-block;
-                position: relative;
-                top: -0.75em;
-                font-size: 2em;
-                padding: 0 0.2em;
-                
-            }
+                     
             
             .cloud {
                 width: 350px; height: 120px;
@@ -359,7 +341,7 @@ document.body.addEventListener('touchstart', function(e){ e.preventDefault(); })
 		</section>
 
 	<div id="mobile">	
-	<img src="robot-mobile.jpg" alt="Girl in a jacket" width="100%" height="100%"  style=" position:relative; z-index: -3;">
+	<img src="img/robot-mobile.jpg" alt="Girl in a jacket" width="100%" height="100%"  style=" position:relative; z-index: -3;">
 	
 	</div>
 		
